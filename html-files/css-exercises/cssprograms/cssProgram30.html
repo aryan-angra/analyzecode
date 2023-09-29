@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Program 30</title>
+    <style type="text/css">
+        p{
+            font-size: 18px;
+        }
+        .box{
+            height:500px;
+            width:700px;
+            font-size: 18px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 4px solid green;
+            position: relative;
+        }
+        .box2{
+            height:300px;
+            width:500px;
+            font-size: 18px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 4px solid green;
+            position:absolute;
+            top:150px;
+            left: 180px;
+        }
+    </style>
+</head>
+<body>
+    <h1>position:absolute;</h1>
+    <p>An element with position:absolute; is positioned relative to the nearest positioned ancestor (insted of positioned relative to the viewport, like fixed):</p>
+    <div class="box">
+        This div element has position: relative;
+        <div class="box2">
+            This div element has position:absolute;
+        </div>
+    </div>
+</body>
+</html>

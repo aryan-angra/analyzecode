@@ -1,0 +1,43 @@
+<html>
+<body>
+    <p>program to check for vowel characters, spaces and consonants using switch statement.</p>
+</body>
+<script>
+    function vowel() {
+        var ch = prompt("Enter a Alphabet : ")
+        switch (ch) {
+            case 'A':
+            case 'E':
+            case 'I':
+            case 'O':
+            case 'U':
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+                document.write(ch + " is a vowel");
+                break;
+            case '1':
+            case '2':
+            case '3':
+            case '4':
+            case '5':
+            case '6':
+            case '7':
+            case '8':
+            case '9':
+            case '0':
+                document.write(ch + " is a number");
+                break;
+            case ' ':
+                document.write(ch + " is a space");
+                break;
+            default:
+                document.write(ch + " is not a vowel");
+                break;
+        }
+    } vowel();
+</script>
+
+</html>

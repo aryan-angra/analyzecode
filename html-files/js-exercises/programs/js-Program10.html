@@ -1,0 +1,20 @@
+<html>
+<body>
+    <p>JavaScript program to find the greatest among three numbers. Display the greater number with appropriate message using if else.</p>
+</body>
+<script>
+    var a = 5, b = 10, c = 15;
+    function getresult() {
+        if (a > b && a > c) {
+            document.write(a + " is the biggest number");
+        } else if (b > c && b > a) {
+            document.write(b + " is the biggest number");
+        } else if (c > a && c > b) {
+            document.write(c + " is the biggest number");
+        }
+    }
+    document.write("A = " + a + "<br>B = " + b + "<br>C = " + c + "<br>")
+    getresult();
+</script>
+
+</html>

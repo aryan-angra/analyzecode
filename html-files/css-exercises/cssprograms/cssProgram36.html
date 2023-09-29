@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Program 36</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .navbar{
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a{
+            float: left;
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+        }
+        .dropbtn{
+            font-size: 18px;
+            padding: 14px 16px;
+            border: none;
+            outline: none;
+            color:white;
+            background-color: inherit;
+            font-family: inherit;
+            cursor: pointer;
+        }
+        .navbar a:hover, .dropdown:hover .dropbtn{
+            background-color: #555;
+        }
+        .dropdown{
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .content{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown .content a{
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown .content a:hover{
+            background-color: #ddd;
+        }
+        .dropdown:hover .content{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="">HOME</a>
+        <a href="">ABOUT</a>
+        <div class="dropdown">
+            <button class="dropbtn">SERVICES <i class="fa fa-caret-down"></i></button>
+                <div class="content">
+                    <a href="">Link 1</a>
+                    <a href="">Link 2</a>
+                    <a href="">Link 3</a>
+                </div>
+        </div>
+        <a href="">CONTACT</a>
+    </div>
+</body>
+</html>

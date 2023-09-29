@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="../../../images/site-logo.svg" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analyze Code | Code Editor</title>
+    <meta name="keywords" content="javascript editor, html, css" />
+    <link rel="stylesheet" href="../../../style.css">
+    <meta name="description" content="Free online code editor for html css javascript"    />
+    <link rel="icon" href="../../images/site-logo.svg" type="image/x-icon" />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet"   />
+  </head>
+
+  <body class="codeEditorBody">
+    <section class="codeEdit-top">
+      <a href="../../../index.html">
+        <div class="logo">
+          <img src="../../../images/site-logo.svg" alt="" />
+          <span class="logo-text">Analyze Code</span>
+        </div>
+      </a>
+      <div class="mobile-toggle-Window">
+        <button class="viewCode" onclick="viewCode()">Code</button>
+        <button class="viewOutput" onclick="viewOutput()">Output</button>
+      </div>
+    </section>
+    <section class="codeOptions">
+      <p class="tutcontent-subheading">
+        Html , CSS and JavaScript Online Editor
+        
+      </p>
+        <div class="download-btn">
+          <button class="rcode" onclick="rcode()"><i class='bx bx-sm bx-play'></i> Run code</button>
+          <button id="saveCode">
+          <i class="bx bx-sm bx-download"></i>Download Code
+        </button>
+      </div>
+    </section>
+    <div class="editor-container">
+      <div class="codeEdit-block">
+        <!-- <div class="codeEditor" contenteditable spellcheck="false"><div class="lines"></div></div> -->
+        <div class="lines"></div>
+        <div class="codeEditor" contenteditable spellcheck="false">
+            </div>
+      </div>
+      <iframe src="" frameborder="0" class="codeOutput"></iframe>
+
+    </div>
+  </body>
+  <script>
+  // js code to stop overwriting the style in editor area from external source
+  let ce = document.querySelector('[contenteditable]')
+  ce.addEventListener('paste', function (e) {
+    e.preventDefault()
+    var text = e.clipboardData.getData('text/plain')
+    document.execCommand('insertText', false, text)
+  })
+  let Codeeditor = document.querySelector(".codeEditor"),
+              codeOutput = document.querySelector(".codeOutput");
+  fetch('codestxt/p7.html')
+.then(component => component.text())
+.then(data=>{
+   
+  Codeeditor.innerText =data;
+  codeOutput.src = "codestxt/p7.html";
+});
+function rcode(){
+                let htmCode = Codeeditor.textContent;
+              console.log(htmCode)
+              codeOutput.src = "data:text/html;charset=utf-8," + escape(htmCode);
+              }
+            // Codeeditor.addEventListener('keyup',() => {
+            //   let htmCode = Codeeditor.textContent;
+            //   codeOutput.src = "data:text/html;charset=utf-8," + encodeURI(htmCode);
+            // })
+            let saveCode = document.querySelector(".downloadCode")
+            function download(file, text) {
+			
+      //creating an invisible element
+      var element = document.createElement('a');
+      element.setAttribute('href',
+      'data:text/html;charset=utf-8, '
+      + encodeURIComponent(text));
+      element.setAttribute('download', file);
+      document.body.appendChild(element);
+      //onClick property
+      element.click();
+      document.body.removeChild(element);
+    }
+    
+    // Start file download.
+    document.getElementById("saveCode")
+    .addEventListener("click", function() {
+      var text = Codeeditor.textContent;
+      var filename = "saveCode.html";
+    
+      download(filename, text);
+    }, false);
+    
+
+    // for mobile navigation buttons->
+    let viewCodeBtn = document.querySelector(".viewCode"),
+        viewOutputBtn = document.querySelector(".viewOutput");
+    function viewCode(){
+      document.querySelector(".codeEdit-block").style.width = "100%";
+      codeOutput.style.width = "0"
+      viewCodeBtn.style.backgroundColor="#0556f3";
+      viewCodeBtn.style.color = "#fff"
+      viewCodeBtn.style.borderColor="#0556f3"
+      viewOutputBtn.style.backgroundColor="#fbfbfb";
+      viewOutputBtn.style.color = "#25265e"
+      viewOutputBtn.style.borderColor="#D3DCE6"
+
+    }
+    function viewOutput(){
+      document.querySelector(".codeEdit-block").style.width = "0";
+      codeOutput.style.width="100%";
+      viewOutputBtn.style.backgroundColor="#0556f3";
+      viewOutputBtn.style.color = "#fff"
+      viewOutputBtn.style.borderColor="#0556f3"
+      viewCodeBtn.style.backgroundColor="#fbfbfb";
+      viewCodeBtn.style.color = "#25265e"
+      viewCodeBtn.style.borderColor="#D3DCE6"
+    }
+   
+    // Codeeditor.innerText = "<font color='red'>hello</font>"
+
+  </script>
+</html>7

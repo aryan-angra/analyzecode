@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+button.btn-design{
+margin: 2% 0;
+background-color: #A555EC;
+color: white;
+cursor: pointer;
+border: none;
+outline: none;
+border-radius: 4px;
+box-shadow: 0 12px 18px rgba(0,0,0,0.05);
+padding: 2%;
+}
+</style>
+</head>
+<body>
+<button class="btn-design" id="colorsChangeblock">Click me to change my background color</button>
+</body>
+<script>
+let colorChangeBtn = document.querySelector("#colorsChangeblock");
+let colorsList = ["#A555EC","#ffb013","#0556f3","#332FD0","#FF7000","#22A39F","#0014FF","#001253","#FF6464","#54B435"]
+let colorCount = 0;
+colorChangeBtn.onclick= () => {
+colorCount++;
+for(let i=0;i<colorsList.length;i++){
+if(i == colorCount){
+colorChangeBtn.style.backgroundColor = colorsList[i];
+}
+if(colorCount>colorsList.length){
+colorCount = -1;
+}
+}
+}
+</script>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Analyze Code</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/site-logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section class="top-area home">
+        <header><a href="#">
+            <div class="logo">
+                <img src="images/site-logo.svg" alt="">
+                <span class="logo-text">Analyze Code</span>
+            </div>
+            </a>
+            <nav>
+                <a href="javascript:void(0)" class="dropdown-btn" id="tutdrop-btn">Tutorials <i class='bx bx-sm bx-chevron-down'></i></a>
+            <a href="javascript:void(0)" class="dropdown-btn" id="exerdrop-btn">Exercises <i class='bx bx-sm bx-chevron-down'></i></a>
+            <a target="_blank" href="https://www.youtube.com/@analyzecode" class="dropdown-btn">Videos <i class='bx bx-play'></i></a>
+            <a target="_blank" href="html-files/css-exercises/css-exercise1.html"  class="dropdown-btn">Code Editor</a>
+            </nav>
+            <div class="openLogin">
+            <button>Login</button>
+            </div>
+            <div class="search-bar">
+                <i class='bx bx-sm bx-search'></i>
+            </div>
+            <i class='bx bx-md bx-menu-alt-right hamburger-menu-ico'></i>
+        </header>
+       
+        <div class="drop-down-container tutcontents-dropdown" id="tutdropdown-content">
+            <div class="sidebar">
+            <ul>
+                <li id="htmtut" class="active">Html</li>
+                <li id="csstut">CSS</li>
+                <li id="jstut">JavaScript</li>
+                <li id="dbmstut">DBMS & MySQL</li>
+                <li id="plsqltut">PL/SQL</li>
+            </ul>
+            </div>
+            <div class="navcontent">
+                <p class="tutcontent-subheading">Popular Tutorials</p>
+                <div id="htmtutcontent" class="tutcontents-dropdown">
+                    <ul>
+                   <li> <a href="html-files/html-tutorials/htm-tut0.html">HTML Introduction</a></li>
+                   <li> <a href="html-files/html-tutorials/htm-tut1.html">HTML Elements</a></li>
+                   <li> <a href="html-files/html-tutorials/htm-tut2.html">HTML Attributes</a></li>
+                   <li> <a href="html-files/html-tutorials/htm-tut3.html">HTML Headings</a></li>
+                   <li> <a href="html-files/html-tutorials/htm-tut4.html">HTML Paragraphs</a></li>
+                   <li> <a href="html-files/html-tutorials/htm-tut5.html">HTML Comments</a></li></ul>
+   <a href="html-files/html-tutorials/htm-tut0.html" class="home-course-button"> View all <img src="images/Double Right icon.svg" alt=""></a>
+
+                </div>
+                <div id="csstutcontent" class="tutcontents-dropdown">
+                    <ul>
+                   <li> <a href="html-files/css-tutorials/css-tut0.html">CSS Introduction</a></li>
+                   <li> <a href="html-files/css-tutorials/css-tut1a.html">CSS Syntax</a></li>
+                   <li> <a href="html-files/css-tutorials/css-tut1b.html">CSS Background</a></li>
+                   <li> <a href="html-files/css-tutorials/css-tut1c.html">CSS Selectors</a></li>
+                   <li> <a href="html-files/css-tutorials/css-tut1d.html">CSS Comments</a></li>
+                   <li> <a href="html-files/css-tutorials/css-tut1e.html">CSS Inline CSS</a></li></ul>
+   <a href="html-files/css-tutorials/css-tut0.html" class="home-course-button"> View all <img src="images/Double Right icon.svg" alt=""></a>
+
+                </div>
+                <div id="jstutcontent" class="tutcontents-dropdown">
+                    <ul>
+                   <li> <a href="html-files/js-tutorials/js-tut0.html">Getting Started</a></li>
+                   <li><a href="html-files/js-tutorials/js-tut1a.htmls-tutorials/js-tut1a.html">Ways to Execute</a></li>
+                   <li> <a href="html-files/js-tutorials/js-tut0.htmls-tutorials/js-tut1b.html">JS Variables</a></li>
+                   <li> <a href="html-files/js-tutorials/js-tut0.htmls-tutorials/js-tut1c.html">Let & Constant</a></li>
+                   <li> <a href="html-files/js-tutorials/js-tut0.htmls-tutorials/js-tut1d.html">Document Methods</a></li>
+                   <li> <a href="html-files/js-tutorials/js-tut0.htmls-tutorials/js-tut1e.html">JS console.log</a></li></ul>
+   <a href="html-files/js-tutorials/js-tut0.html" class="home-course-button"> View all <img src="images/Double Right icon.svg" alt=""></a>
+
+                </div>
+
+                <div id="dbmstutcontent" class="tutcontents-dropdown">
+                    <ul>
+                   <li> <a href="html-files/mysql-tutorials/dbms-tut1.html">What is DBMS?</a></li>
+                   <li><a href="html-files/mysql-tutorials/dbms-tut7.html">RDBMS 12 Codd's Rule</a></li>
+                   <li> <a href="html-files/mysql-tutorials/dbms-tut6.html">DBMS Architecture</a></li>
+                   <li> <a href="html-files/mysql-tutorials/dbms-tut8.html">MySQL Features</a></li>
+                   <li> <a href="html-files/mysql-tutorials/dbms-tut13.html">MySQL CREATE TABLE</a></li>
+                   <li> <a href="html-files/mysql-tutorials/dbms-tut18.html">MySQL Constraints</a></li></ul>
+   <a href="html-files/mysql-tutorials/dbms-tut1.html" class="home-course-button"> View all <img src="images/Double Right icon.svg" alt=""></a>
+
+                </div>
+                <div id="plsqltutcontent" class="tutcontents-dropdown">
+                    <ul>
+                   <li> <a href="html-files/plsql-tutorials/plsql-tut1.html">Getting Started</a></li>
+                   <li><a href="html-files/plsql-tutorials/plsql-tut2.html">PL/SQL Variables</a></li>
+                   <li> <a href="html-files/plsql-tutorials/plsql-tut3.html">PL/SQL Constant</a></li>
+                   <li> <a href="html-files/plsql-tutorials/plsql-tut4.html">PL/SQL If</a></li>
+                   <li> <a href="html-files/plsql-tutorials/plsql-tut5.html">PL/SQL Case</a></li>
+                   <li> <a href="html-files/plsql-tutorials/plsql-tut6.html">PL/SQL Loop</a></li></ul>
+   <a href="html-files/plsql-tutorials/plsql-tut1.html" class="home-course-button"> View all <img src="images/Double Right icon.svg" alt=""></a>
+
+                </div>
+            </div>
+
+</div>
+
+            <div class="drop-down-container exercontents-dropdown" id="exerdropdown-content">
+                <div class="sidebar">
+                <ul>
+                    <li id="htmexer" class="active">Html</li>
+                    <li id="cssexer">CSS</li>
+                    <li id="jsexer">JavaScript</li>
+        
+                </ul>
+                </div>
+                <div class="navcontent">
+                    <p class="tutcontent-subheading">Popular Exercises</p>
+                    <div id="htmexercontent" class="exercontents-dropdown">
+                        <ul>
+                       <li> <a href="html-files/html-exercises/htm-exercise1.html">h1 to h6 tags</a></li>
+                       <li> <a href="html-files/html-exercises/htm-exercise2.html">Span two columns</a></li>
+                       <li> <a href="html-files/html-exercises/htm-exercise3.html">Emojis using html</a></li>
+                       <li> <a href="html-files/html-exercises/htm-exercise4.html">Types of Lists</a></li>
+                       <li> <a href="html-files/html-exercises/htm-exercise5.html">Marquee tag</a></li>
+                       <li> <a href="html-files/html-exercises/htm-exercise6.html">Details Tag</a></li></ul>
+       <a href="html-files/html-exercises/htm-exerciselist.html" class="home-course-button"> View all <img src="images/Double Right icon.svg" alt=""></a>
+    
+                    </div>
+                    <div id="cssexercontent" class="exercontents-dropdown">
+                        <ul>
+                       <li> <a href="html-files/css-exercises/css-exercise1.html">Gradient with divs</a></li>
+                       <li> <a href="html-files/css-exercises/css-exercise6.html">Name Card</a></li>
+                       <li> <a href="html-files/css-exercises/css-exercise13.html">Text Editing</a></li>
+                       <li> <a href="html-files/css-exercises/css-exercise15.html">Menu Bar</a></li>
+                       <li> <a href="html-files/css-exercises/css-exercise23.html">Bakcground Image</a></li>
+                       <li> <a href="html-files/css-exercises/css-exercise26.html">Text Shadow</a></li></ul>
+       <a href="html-files/css-exercises/css-exerciselist.html" class="home-course-button"> View all <img src="images/Double Right icon.svg" alt=""></a>
+    
+                    </div>
+                    <div id="jsexercontent" class="exercontents-dropdown">
+                        <ul>
+                       <li> <a href="html-files/js-exercises/js-exercise1.html">Convert Temperature</a></li>
+                       <li><a href="html-files/js-exercises/js-exercise2.html">Area of rectangle</a></li>
+                       <li> <a href="html-files/js-exercises/js-exercise3.html">Check Leap Year</a></li>
+                       <li> <a href="html-files/js-exercises/js-exercise4.html">Calculate days</a></li>
+                       <li> <a href="html-files/js-exercises/js-exercise5.html">Get Website URL</a></li>
+                       <li> <a href="html-files/js-exercises/js-exercise6.html">Compute Sum/Triple Sum</a></li></ul>
+       <a href="html-files/js-exercises/js-exerciselist.html" class="home-course-button"> View all <img src="images/Double Right icon.svg" alt=""></a>
+    
+                    </div>
+    
+                    
+                </div>
+
+
+
+
+
+
+</div>
+
+        </div>
+        <div class="web-banner">
+            <div class="web-banner-txt">
+                <p class="large-heading">On-demand solutions to help every developer</p>
+                <img class="border-line" src="images/Line Copy.svg" alt="">
+                <p class="sub-heading">Read tutorials and examples, write programs, run code and learn to code.</p>
+                <ul class="content-qualities">
+                    <li><i class='bx bx-md bx-check'></i>Free tutorials</li>
+                    <li><i class='bx bx-md bx-check'></i>Understandable Codes</li>
+                    <li><i class='bx bx-md bx-check'></i>Friendly tutorials</li>
+                </ul>            
+                <a href="#courses" class="explore-button">Explore</a>
+            </div>
+            <img src="images/Web-bannersvg.svg" alt="" class="home-banner-illustration">
+        </div>
+    </section>
+    <div class="arrow-container">
+    <a href="#courses" class="arrow-down-home">
+    <i class='bx bx-md bx-down-arrow-alt bx-fade-down-hover' ></i>
+    </a>
+    </div>
+    <section class="courses-list-container">
+        <a name="courses"></a>
+        <p class="medium-heading homepage">Choose what to learn</p>
+        <p class="course-sub-title">Start learning programming language of your choice.</p>
+    </section>
+<div class="course-option-container">
+    <div class="text">
+   <p class="course-heading">HTML ( HYPER TEXT MARKUP LANGUAGE )
+    <p class="tutcontent-description tutcontent-description-home">
+Used for creating webpages that contains texts, graphics, multimedia etc. Learn various tags, attributes that help you in web-development.
+</p>    
+   <a href="html-files/html-tutorials/htm-tut0.html" class="home-course-button" id="jstut0c1"> Explore <img src="images/Double Right icon.svg" alt=""></a>
+    </div>
+    <img src="images/html-blob.svg" alt="">
+</div>
+<hr class="hr-line-home">
+<div class="course-option-container">
+    <img src="images/css-blob.svg" alt="">
+    <div class="text">
+   <p class="course-heading">CSS ( CASCADING STYLE SHEETS )
+    <p class="tutcontent-description tutcontent-description-home">
+Used for creating webpages that contains texts, graphics, multimedia etc. Learn various tags, attributes that help you in web-development.
+</p>    
+   <a href="html-files/css-tutorials/css-tut0.html" class="home-course-button"> Explore <img src="images/Double Right icon.svg" alt=""></a>
+    </div>
+</div>
+<hr class="hr-line-home">
+<div class="course-option-container">
+    <div class="text">
+        <p class="course-heading">JS (JavaScript) </p>
+        <p class="tutcontent-description tutcontent-description-home">
+            Programming language used both on the client-side and server-side that allows you to make web pages interactive or dynamic.
+        </p>    
+        <a href="html-files/css-tutorials/css-tut0.html" class="home-course-button"> Explore <img src="images/Double Right icon.svg" alt=""></a>
+    </div>
+    <img src="images/js-logo.svg" alt="">
+</div>
+<hr class="hr-line-home">
+<div class="course-option-container">
+    <img src="images/mysql-logo.svg" alt="">
+    <div class="text">
+        <p class="course-heading">DBMS and MySQL </p>
+        <p class="tutcontent-description tutcontent-description-home">
+            <p class="tutcontent-description tutcontent-description-home">
+                Our tutorial provides basic and advance concepts of database management and MySQL commands with detailed examples
+        </p>    
+        <a href="html-files/mysql-tutorials/dbms-tut1.html" class="home-course-button"> Explore <img src="images/Double Right icon.svg" alt=""></a>
+    </div>
+</div>
+<hr class="hr-line-home">
+<div class="course-option-container">
+    <div class="text">
+        <p class="course-heading">PL/SQL</p>
+        <p class="tutcontent-description tutcontent-description-home">
+            A block structured language that can have multiple blocks in it. Our tutorial includes all topics of PL/SQL language.
+        </p>    
+        <a href="html-files/plsql-tutorials/plsql-tut1.html" class="home-course-button"> Explore <img src="images/Double Right icon.svg" alt=""></a>
+    </div>
+    <img src="images/plsql-logo.svg" alt="">
+</div>
+
+<div class="whyus">
+    <p class="medium-heading homepage">Why Analyze Code ?</p>
+    <div class="container">
+    <div class="text">
+        <details>
+            <summary>
+               <span class="textd"> PROGRAMMING MADE EASY</span>
+               <span class="open">+</span>
+            </summary>
+            <p class="tutcontent-description">
+                We focus on simplicity.Programming tutorials and examples written in simple, understandable language for beginners.
+            </p>
+        </details>
+        <details>
+            <summary>
+               <span class="textd"> CONTENT YOU CAN TRUST</span>
+               <span class="open">+</span>
+            </summary>
+            <p class="tutcontent-description">
+                We are continually working to create programming resources that are accurate and easier to understand. </p>
+        </details>
+
+        <details>
+            <summary>
+               <span class="textd"> LEARN BY CODING</span>
+               <span class="open">+</span>
+            </summary>
+            <p class="tutcontent-description">
+                The best way to learn coding is to practice coding via writing, explore a variety of programs , exercises.</p>
+        </details>
+    </div>
+    <img src="images/why-ac.svg" alt="">
+    </div>
+</div>
+
+
+
+<section class="abouteditor">
+    <p class="medium-heading homepage" style="margin:1% 0;">Try our online editor</p>
+        <p class="course-sub-title" style="margin:1% 0;">Practice with our online code editior</p>
+<img src="images/editor-view.svg" alt="" class="homeditor">
+<a href="html-files/css-exercises/css-exercise16.html" class="simple-btn">Try now</a>
+</section>
+
+<footer>
+    <div class="footer-l-block">
+        <a href="index.html">
+            <div class="logo">
+                <img src="../../images/site-logo.svg" alt="">
+                <span class="logo-text">Analyze Code</span>
+            </div>
+        </a>
+        <p class="follow-us-heading">Follow us @ <span> #AnalyzeCode</span></p>
+        <div class="social-links-container">
+          <a target="_blank" href="https://www.facebook.com/profile.php?id=100088531986939">  <i class='bx bx-md bxl-facebook-square'></i></a>
+          <a target="_blank" href="https://www.instagram.com/analyzecode/">  <i class='bx bx-md bxl-instagram-alt' ></i></a>
+          <a target="_blank" href="https://twitter.com/AnalyzeCode">  <i class='bx bx-md bxl-twitter' ></i></a>
+          <a target="_blank" href="https://www.youtube.com/@analyzecode">  <i class='bx bx-md bxl-youtube' ></i></a>
+        </div>
+    </div>
+    <div class="footer-s-block">
+        <p class="heading">Help</p>
+        <ul>
+            <li><a href="html-files/support.html">Support</a> </li>
+            <li><a href="html-files/faqs.html">FAQs</a> </li>
+            <li><a href="html-files/terms-conditions.html">Terms and conditions</a> </li>
+            <li><a href="html-files/privacy-policy.html">Privacy Policy</a></li>
+        </ul>
+    </div>
+    <div class="footer-s-block">
+        <div class="heading">Company</div>
+        <ul>
+            <li><a href="html-files/about-us.html">About us</a></li>
+            <li><a href="html-files/contact-us.html">Contact us</a></li>
+        </ul>
+    </div>
+    <div class="footer-l-block subscribe">
+        <div class="heading">Subscribe to our news letter</div>
+        <form action="">
+            <input type="email" name="" id="">
+            <input type="submit" value="SUBSCRIBE">
+        </form>
+    </div>
+</footer>
+
+
+</body>
+<script src="script.js"></script>
+<script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+</html>

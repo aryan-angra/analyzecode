@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+<style>
+.keyboard-shortcut {
+border: 1px solid #ddd;
+padding: 1%;
+color: #25265e;
+display: inline-block;
+margin: 0 1%;
+border-radius: 4px;
+}
+.countme{
+display: flex;
+align-items: center;
+width: 30%;
+cursor: pointer;
+font-family: Calibri;
+border: 1px solid #ddd;
+color: #25265e;
+}
+.countme .count{
+margin-left: 9%;
+display: inline-block;
+}
+.countme i.bxs-heart{
+color: red;
+margin: 0 6%;
+}
+</style>
+</head>
+<body>
+<div class="keyboard-shortcut countme"><i class='bx bx-sm bxs-heart'></i>Likes count <span class="count">  0</span> </div>
+</body>
+<script>
+let countbtn = document.querySelector(".countme");
+let btncount = document.querySelector(".count");
+let count = 0;
+countbtn.addEventListener("click", () =>{
+count++;
+btncount.innerHTML = count;
+});
+</script>
+<script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+
+</html>

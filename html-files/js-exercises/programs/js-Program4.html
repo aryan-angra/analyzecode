@@ -1,0 +1,22 @@
+<html>
+<body>
+    <h1>JavaScript program to calculate days left until next Diwali.</h1>
+</body>
+<script>
+let today = new Date();
+let diwaliYear = today.getFullYear();
+if (today.getMonth() == 9 &&
+    today.getDate() > 24) {
+    diwaliYear = diwaliYear + 1;
+}
+let diwaliDate =
+    new Date(diwaliYear, 9, 24);
+let dayMilliseconds =
+    1000 * 60 * 60 * 24;
+let remainingDays = Math.ceil(
+    (diwaliDate.getTime() - today.getTime()) /
+    (dayMilliseconds)
+);
+ document.write("There are " + remainingDays + " days left until Diwali.");
+</script>
+</html>

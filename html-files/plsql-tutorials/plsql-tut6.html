@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop  | PL/SQl</title>
+    <meta name="keywords" content="PL/SQl tricks, Features, PL/SQl">
+    <meta name="description" content="free PL/SQl tutorials for beginners step by step">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" href="../../images/site-logo.svg" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <section class="top-area" id="topArea">
+        <header>
+            <a href="../../index.html">
+                <div class="logo">
+                    <img src="../../images/site-logo.svg" alt="">
+                    <span class="logo-text">Analyze Code</span>
+                </div> 
+            </a>
+            <nav>
+                <a href="javascript:void(0)" class="dropdown-btn" id="tutdrop-btn">Tutorials <i class='bx bx-sm bx-chevron-down'></i></a>
+                <a href="javascript:void(0)" class="dropdown-btn" id="exerdrop-btn">Exercises <i class='bx bx-sm bx-chevron-down'></i></a>
+                <a href="https://www.youtube.com/@analyzecode" class="dropdown-btn">Videos <i class='bx bx-play'></i></a>
+                <a href="javascript:void(0)" class="dropdown-btn">Code Editor</a>
+            </nav>
+            <div class="openLogin">
+                <button>Login</button>
+                </div>
+            <div class="search-bar">
+                <i class='bx bx-sm bx-search'></i>
+            </div>
+            <i class='bx bx-md bx-menu-alt-right hamburger-menu-ico'></i>
+        </header>
+        <div class="mobile-dropdown hidden">
+            <div class="buttons"><a href="javascript:void(0)" class="dropdown-btn presentcourse-btn activebtn">Table of Contents</a>
+                <a href="javascript:void(0)" class="dropdown-btn allcourselist-btn">Explore Courses</a></div>
+            <div class="content">
+
+            
+            <div class="presentcourse">
+                <div class="tut-content-sidebar">
+                    <p class="tut-content-sidebar-heading">Page Index</p>
+                    <details class="sidebarDetail" open>
+                        <summary>PL/SQL Introduction <i class='bx bxs-chevron-down'></i></summary>
+                        <ul>
+                            <li><a href="plsql-tut1.html" class="tutitemactive"><i class="fa-regular fa-circle-check"></i>Getting Started</a></li>
+                            <li><a href="plsql-tut2.html" ><i class="fa-regular fa-circle-check"></i>PL/SQL Variables</a></li>
+                            <li><a href="plsql-tut3.html" ><i class="fa-regular fa-circle-check"></i>PL/SQL Constant</a></li>
+                        </ul>
+                    </details>
+                    <details class="sidebarDetail">
+                        <summary>Control Statements<i class='bx bxs-chevron-down'></i></summary>
+                        <ul>
+                            <li><a href="plsql-tut4.html" ><i class="fa-regular fa-circle-check"></i>PL/SQL IF</a></li>
+                            <li><a href="plsql-tut5.html" ><i class="fa-regular fa-circle-check"></i>PL/SQL Case</a></li>
+                            <li><a href="plsql-tut6.html" ><i class="fa-regular fa-circle-check"></i>PL/SQL Loop</a></li>
+                            <li><a href="plsql-tut7.html" ><i class="fa-regular fa-circle-check"></i>PL/SQL ExitLoop</a></li>
+                            <li><a href="plsql-tut8.html" ><i class="fa-regular fa-circle-check"></i>PL/SQL WhileLoop</a></li>
+                            <li><a href="plsql-tut9.html" ><i class="fa-regular fa-circle-check"></i>PL/SQL For Loop</a></li>
+                            <li><a href="plsql-tut10.html" ><i class="fa-regular fa-circle-check"></i>PL/SQL Continue</a></li>
+                            <li><a href="plsql-tut11.html" ><i class="fa-regular fa-circle-check"></i>PL/SQL GOTO</a></li>
+                        </ul>
+                    </details>
+                    <details class="sidebarDetail">
+                        <summary>PLSQL Concepts<i class='bx bxs-chevron-down'></i></summary>
+                        <ul>
+                            <li><a href="plsql-tut12.html" ><i class="fa-regular fa-circle-check"></i>PL/SQL Procedure</a></li>
+                            <li><a href="plsql-tut13.html" ><i class="fa-regular fa-circle-check"></i>PL/SQL Function</a></li>
+                            <li><a href="plsql-tut14.html" ><i class="fa-regular fa-circle-check"></i>PL/SQL Cursor</a></li>
+                            <li><a href="plsql-tut15.html" ><i class="fa-regular fa-circle-check"></i>PL/SQL Exception</a></li>
+                            <li><a href="plsql-tut16.html" ><i class="fa-regular fa-circle-check"></i>PL/SQL Trigger</a></li>
+                           </ul>
+                    </details>
+                </div>
+             </div>
+             <div class="allcourselist">
+                <p class="medium-heading">Popular Tutorials</p>
+                <div id="htmtutcontentm">
+                    <p class="tutcontent-subheading" style="color:#0556f3;">HTML</p>
+                   <ul>
+                   <li> <a href="../html-tutorials/htm-tut0.html">HTML Introduction</a></li>
+                   <li> <a href="../html-tutorials/htm-tut1.html">HTML Elements</a></li>
+                   <li> <a href="../html-tutorials/htm-tut2.html">HTML Attributes</a></li>
+                   <li> <a href="../html-tutorials/htm-tut3.html">HTML Headings</a></li>
+                   <li> <a href="../html-tutorials/htm-tut4.html">HTML Paragraphs</a></li>
+                   <li> <a href="../html-tutorials/htm-tut5.html">HTML Comments</a></li></ul>
+    <a href="../html-tutorials/htm-tut0.html" class="home-course-button"> View all <img src="../../images/Double Right icon.svg" alt=""></a>
+    
+                </div>
+                <div id="csstutcontentm">
+                   <p class="tutcontent-subheading" style="color:#0556f3;">CSS</p>
+
+                    <ul>
+                   <li> <a href="../css-tutorials/css-tut0.html">CSS Introduction</a></li>
+                   <li> <a href="../css-tutorials/css-tut1a.html">CSS Syntax</a></li>
+                   <li> <a href="../css-tutorials/css-tut1b.html">CSS Background</a></li>
+                   <li> <a href="../css-tutorials/css-tut1c.html">CSS Selectors</a></li>
+                   <li> <a href="../css-tutorials/css-tut1d.html">CSS Comments</a></li>
+                   <li> <a href="../css-tutorials/css-tut1e.html">CSS Inline CSS</a></li></ul>
+    <a href="../css-tutorials/css-tut0.html" class="home-course-button"> View all <img src="../../images/Double Right icon.svg" alt=""></a>
+    
+                </div>
+                <div id="jstutcontentm">
+                   <p class="tutcontent-subheading" style="color:#0556f3;">JavaScript</p>
+
+                    <ul>
+                   <li> <a href="../js-tutorials/js-tut0.html">Getting Started</a></li>
+                    <li><a href="../js-tutorials/js-tut1a.htmls-tutorials/js-tut1a.html">Ways to Execute</a></li>
+                   <li> <a href="../js-tutorials/js-tut0.htmls-tutorials/js-tut1b.html">JS Variables</a></li>
+                   <li> <a href="../js-tutorials/js-tut0.htmls-tutorials/js-tut1c.html">Let & Constant</a></li>
+                   <li> <a href="../js-tutorials/js-tut0.htmls-tutorials/js-tut1d.html">Document Methods</a></li>
+                   <li> <a href="../js-tutorials/js-tut0.htmls-tutorials/js-tut1e.html">JS console.log</a></li></ul>
+    <a href="../js-tutorials/js-tut0.html" class="home-course-button"> View all <img src="../../images/Double Right icon.svg" alt=""></a>
+    
+                </div>
+    
+                <div id="dbmstutcontentm">
+                   <p class="tutcontent-subheading" style="color:#0556f3;">DBMS & MySQL</p>
+
+                    <ul>
+                   <li> <a href="../mysql-tutorials/dbms-tut1.html">What is DBMS?</a></li>
+                   <li><a href="../mysql-tutorials/dbms-tut7.html">RDBMS 12 Codd's Rule</a></li>
+                   <li> <a href="../mysql-tutorials/dbms-tut6.html">DBMS Architecture</a></li>
+                   <li> <a href="../mysql-tutorials/dbms-tut8.html">MySQL Features</a></li>
+                   <li> <a href="../mysql-tutorials/dbms-tut13.html">MySQL CREATE TABLE</a></li>
+                   <li> <a href=../mysql-tutorials/dbms-tut18.html">MySQL Constraints</a></li></ul>
+    <a href="../mysql-tutorials/dbms-tut1.html" class="home-course-button"> View all <img src="../../images/Double Right icon.svg" alt=""></a>
+    
+                </div>
+                <div id="plsqltutcontentm">
+                   <p class="tutcontent-subheading" style="color:#0556f3;">PL/SQL</p>
+
+                    <ul>
+                   <li> <a href="../plsql-tutorials/plsql-tut1.html">Getting Started</a></li>
+                   <li><a href="../plsql-tutorials/plsql-tut2.html">PL/SQL Variables</a></li>
+                   <li> <a href="../plsql-tutorials/plsql-tut3.html">PL/SQL Constant</a></li>
+                   <li> <a href="../plsql-tutorials/plsql-tut4.html">PL/SQL If</a></li>
+                   <li> <a href="../plsql-tutorials/plsql-tut5.html">PL/SQL Case</a></li>
+                   <li> <a href="../plsql-tutorials/plsql-tut6.html">PL/SQL Loop</a></li></ul>
+    <a href="../plsql-tutorials/plsql-tut1.html" class="home-course-button"> View all <img src="../../images/Double Right icon.svg" alt=""></a>
+    
+                </div>
+            </div>
+            </div>
+
+         </div>
+        <div class="drop-down-container tutcontents-dropdown" id="tutdropdown-content">
+            <div class="sidebar">
+            <ul>
+                <li id="htmtut" class="active">Html</li>
+                <li id="csstut">CSS</li>
+                <li id="jstut">JavaScript</li>
+                <li id="dbmstut">DBMS & MySQL</li>
+                <li id="plsqltut">PL/SQL</li>
+            </ul>
+            </div>
+            <div class="navcontent">
+                <p class="tutcontent-subheading">Popular Tutorials</p>
+                <div id="htmtutcontent" class="tutcontents-dropdown">
+                    <ul>
+                   <li> <a href="../html-tutorials/htm-tut0.html">HTML Introduction</a></li>
+                   <li> <a href="../html-tutorials/htm-tut1.html">HTML Elements</a></li>
+                   <li> <a href="../html-tutorials/htm-tut2.html">HTML Attributes</a></li>
+                   <li> <a href="../html-tutorials/htm-tut3.html">HTML Headings</a></li>
+                   <li> <a href="../html-tutorials/htm-tut4.html">HTML Paragraphs</a></li>
+                   <li> <a href="../html-tutorials/htm-tut5.html">HTML Comments</a></li></ul>
+    <a href="../html-tutorials/htm-tut0.html" class="home-course-button"> View all <img src="../../images/Double Right icon.svg" alt=""></a>
+    
+                </div>
+                <div id="csstutcontent" class="tutcontents-dropdown">
+                    <ul>
+                   <li> <a href="../css-tutorials/css-tut0.html">CSS Introduction</a></li>
+                   <li> <a href="../css-tutorials/css-tut1a.html">CSS Syntax</a></li>
+                   <li> <a href="../css-tutorials/css-tut1b.html">CSS Background</a></li>
+                   <li> <a href="../css-tutorials/css-tut1c.html">CSS Selectors</a></li>
+                   <li> <a href="../css-tutorials/css-tut1d.html">CSS Comments</a></li>
+                   <li> <a href="../css-tutorials/css-tut1e.html">CSS Inline CSS</a></li></ul>
+    <a href="../css-tutorials/css-tut0.html" class="home-course-button"> View all <img src="../../images/Double Right icon.svg" alt=""></a>
+    
+                </div>
+                <div id="jstutcontent" class="tutcontents-dropdown">
+                    <ul>
+                   <li> <a href="../js-tutorials/js-tut0.html">Getting Started</a></li>
+                    <li><a href="../js-tutorials/js-tut1a.htmls-tutorials/js-tut1a.html">Ways to Execute</a></li>
+                   <li> <a href="../js-tutorials/js-tut0.htmls-tutorials/js-tut1b.html">JS Variables</a></li>
+                   <li> <a href="../js-tutorials/js-tut0.htmls-tutorials/js-tut1c.html">Let & Constant</a></li>
+                   <li> <a href="../js-tutorials/js-tut0.htmls-tutorials/js-tut1d.html">Document Methods</a></li>
+                   <li> <a href="../js-tutorials/js-tut0.htmls-tutorials/js-tut1e.html">JS console.log</a></li></ul>
+    <a href="../js-tutorials/js-tut0.html" class="home-course-button"> View all <img src="../../images/Double Right icon.svg" alt=""></a>
+    
+                </div>
+    
+                <div id="dbmstutcontent" class="tutcontents-dropdown">
+                    <ul>
+                   <li> <a href="../mysql-tutorials/dbms-tut1.html">What is DBMS?</a></li>
+                   <li><a href="../mysql-tutorials/dbms-tut7.html">RDBMS 12 Codd's Rule</a></li>
+                   <li> <a href="../mysql-tutorials/dbms-tut6.html">DBMS Architecture</a></li>
+                   <li> <a href="../mysql-tutorials/dbms-tut8.html">MySQL Features</a></li>
+                   <li> <a href="../mysql-tutorials/dbms-tut13.html">MySQL CREATE TABLE</a></li>
+                   <li> <a href=../mysql-tutorials/dbms-tut18.html">MySQL Constraints</a></li></ul>
+    <a href="../mysql-tutorials/dbms-tut1.html" class="home-course-button"> View all <img src="../../images/Double Right icon.svg" alt=""></a>
+    
+                </div>
+                <div id="plsqltutcontent" class="tutcontents-dropdown">
+                    <ul>
+                   <li> <a href="../plsql-tutorials/plsql-tut1.html">Getting Started</a></li>
+                   <li><a href="../plsql-tutorials/plsql-tut2.html">PL/SQL Variables</a></li>
+                   <li> <a href="../plsql-tutorials/plsql-tut3.html">PL/SQL Constant</a></li>
+                   <li> <a href="../plsql-tutorials/plsql-tut4.html">PL/SQL If</a></li>
+                   <li> <a href="../plsql-tutorials/plsql-tut5.html">PL/SQL Case</a></li>
+                   <li> <a href="../plsql-tutorials/plsql-tut6.html">PL/SQL Loop</a></li></ul>
+    <a href="../plsql-tutorials/plsql-tut1.html" class="home-course-button"> View all <img src="../../images/Double Right icon.svg" alt=""></a>
+    
+                </div>
+            </div>
+    
+    </div>
+    
+            <div class="drop-down-container exercontents-dropdown" id="exerdropdown-content">
+                <div class="sidebar">
+                <ul>
+                    <li id="htmexer" class="active">Html</li>
+                    <li id="cssexer">CSS</li>
+                    <li id="jsexer">JavaScript</li>
+        
+                </ul>
+                </div>
+                <div class="navcontent">
+                    <p class="tutcontent-subheading">Popular Exercises</p>
+                    <div id="htmexercontent" class="exercontents-dropdown">
+                        <ul>
+                       <li> <a href="../html-exercises/htm-exercise1.html">h1 to h6 tags</a></li>
+                       <li> <a href="../html-exercises/htm-exercise2.html">Span two columns</a></li>
+                       <li> <a href="../html-exercises/htm-exercise3.html">Emojis using html</a></li>
+                       <li> <a href="../html-exercises/htm-exercise4.html">Types of Lists</a></li>
+                       <li> <a href="../html-exercises/htm-exercise5.html">Marquee tag</a></li>
+                       <li> <a href="../html-exercises/htm-exercise6.html">Details Tag</a></li></ul>
+       <a href="../html-exercises/htm-exerciselist.html" class="home-course-button"> View all <img src="../../images/Double Right icon.svg" alt=""></a>
+    
+                    </div>
+                    <div id="cssexercontent" class="exercontents-dropdown">
+                        <ul>
+                       <li> <a href="../css-exercises/css-exercise1.html">Gradient with divs</a></li>
+                       <li> <a href="../css-exercises/css-exercise6.html">Name Card</a></li>
+                       <li> <a href="../css-exercises/css-exercise13.html">Text Editing</a></li>
+                       <li> <a href="../css-exercises/css-exercise15.html">Menu Bar</a></li>
+                       <li> <a href="../css-exercises/css-exercise23.html">Bakcground Image</a></li>
+                       <li> <a href="../css-exercises/css-exercise26.html">Text Shadow</a></li></ul>
+       <a href="../css-exercises/css-exercise1.html" class="home-course-button"> View all <img src="../../images/Double Right icon.svg" alt=""></a>
+    
+                    </div>
+                    <div id="jsexercontent" class="exercontents-dropdown">
+                        <ul>
+                       <li> <a href="../js-exercises/js-exercise1.html">Convert Temperature</a></li>
+                        <li><a href="../js-exercises/js-exercise2.html">Area of rectangle</a></li>
+                       <li> <a href="../js-exercises/js-exercise3.html">Check Leap Year</a></li>
+                       <li> <a href="../js-exercises/js-exercise4.html">Calculate days</a></li>
+                       <li> <a href="../js-exercises/js-exercise5.html">Get Website URL</a></li>
+                       <li> <a href="../js-exercises/js-exercise6.html">Compute Sum/Triple Sum</a></li></ul>
+       <a href="../js-exercises/js-exerciselist.html" class="home-course-button"> View all <img src="../../images/Double Right icon.svg" alt=""></a>
+    
+                    </div>
+    
+                    
+                </div>
+    
+    </div>
+    
+        <div class="jsblob1"><img src="../../images/jstut-blob.svg" alt=""></div>
+        <div class="mysqlblob2"><img src="../../images/jstut-blob2.svg" alt=""></div>
+        <div class="tutorial-banner-top desktop-tutorial">
+            <img src="../../images/plsql-logo.svg" alt=""> 
+            <div class="tutorial-banner-text">
+                <p class="medium-heading">Learn PL/SQL Language</p>
+                <div class="sub-nav">
+                    <a href="plsql-tut1.html" class="active"><i class='bx bx-md bx-book-bookmark'></i>Tutorials</a>
+                    <a href="plsql_qna.html"><i class='bx bx-md bx-book-open'></i>QNA</a>
+                </div> 
+                <img src="../../images/blue-underline.svg" class="blue-underline" alt="">
+                <p class="lang-defination">A block structured language that can have multiple blocks in it. Our tutorial includes all topics of PL/SQL language. 
+                </p>
+            </div>
+            </div>
+            <div class="tutorial-banner-top mobile-banner" style="display:none;">
+                    <div class="tutorial-banner-text">
+                        <img class="mysql" src="../../images/plsql-logo.svg" alt="">
+                        <p class="medium-heading">Learn PL/SQL Language</p>
+                    </div>
+                  
+                    <div class="sub-nav">
+                        <a href="plsql-tut1.html" class="active"><i class='bx bx-md bx-book-bookmark'></i>Tutorials</a>
+                        <a href="plsql_qna.html"><i class='bx bx-md bx-book-open'></i>QNA</a>
+                    </div> 
+                <img src="../../images/blue-underline.svg" class="blue-underline" alt="">
+               <div class="tutorial-banner-text mobile">
+                <p class="lang-defination">A block structured language that can have multiple blocks in it. Our tutorial includes all topics of PL/SQL language. 
+                </p>
+               </div>
+            </div>
+    </section>
+
+   <a href="#"> <i class='bx bx-md bxs-chevron-up gotoup'></i></a>
+    <section class="tut-content-block" id="tutContentBlock">
+       <div class="tut-content-sidebar">
+        <p class="tut-content-sidebar-heading">Page Index</p>
+        <details class="sidebarDetail">
+            <summary>PL/SQL Introduction <i class='bx bxs-chevron-down'></i></summary>
+            <ul>
+                <li><a href="plsql-tut1.html"><i class="fa-regular fa-circle-check"></i>Getting Started</a></li>
+                <li><a href="plsql-tut2.html"><i class="fa-regular fa-circle-check"></i>PL/SQL Variables</a></li>
+                <li><a href="plsql-tut3.html"><i class="fa-regular fa-circle-check"></i>PL/SQL Constant</a></li>
+            </ul>
+        </details>
+        <details class="sidebarDetail" open>
+            <summary>Control Statements<i class='bx bxs-chevron-down'></i></summary>
+            <ul>
+                <li><a href="plsql-tut4.html"><i class="fa-regular fa-circle-check"></i>PL/SQL IF</a></li>
+                <li><a href="plsql-tut5.html"><i class="fa-regular fa-circle-check"></i>PL/SQL Case</a></li>
+                <li><a href="plsql-tut6.html"   class="tutitemactive"><i class="fa-regular fa-circle-check"></i>PL/SQL Loop</a></li>
+                <li><a href="plsql-tut7.html" ><i class="fa-regular fa-circle-check"></i>PL/SQL ExitLoop</a></li>
+                <li><a href="plsql-tut8.html" ><i class="fa-regular fa-circle-check"></i>PL/SQL WhileLoop</a></li>
+                <li><a href="plsql-tut9.html" ><i class="fa-regular fa-circle-check"></i>PL/SQL For Loop</a></li>
+                <li><a href="plsql-tut10.html" ><i class="fa-regular fa-circle-check"></i>PL/SQL Continue</a></li>
+                <li><a href="plsql-tut11.html" ><i class="fa-regular fa-circle-check"></i>PL/SQL GOTO</a></li>
+            </ul>
+        </details>
+        <details class="sidebarDetail">
+            <summary>PLSQL Concepts<i class='bx bxs-chevron-down'></i></summary>
+            <ul>
+                <li><a href="plsql-tut12.html"><i class="fa-regular fa-circle-check"></i>PL/SQL Procedure</a></li>
+                <li><a href="plsql-tut13.html" ><i class="fa-regular fa-circle-check"></i>PL/SQL Function</a></li>
+                <li><a href="plsql-tut14.html" ><i class="fa-regular fa-circle-check"></i>PL/SQL Cursor</a></li>
+                <li><a href="plsql-tut15.html" ><i class="fa-regular fa-circle-check"></i>PL/SQL Exception</a></li>
+                <li><a href="plsql-tut16.html" ><i class="fa-regular fa-circle-check"></i>PL/SQL Trigger</a></li>
+               </ul>
+        </details>
+  
+       </div>
+        <div class="tut-content-show-content">
+            <p class="medium-heading">Loop in PL/SQL</p>
+            <p class="tutcontent-description">The PL/SQL loops are used to repeat the execution of one or more statements for specified number of times. These are also known as iterative control statements.
+</p>
+            <p class="tutcontent-subheading">Syntax for a basic loop:</p>
+<pre class="txtbox">           
+LOOP  
+Sequence of statements;  
+ END LOOP; 
+</pre>
+            <p class="tutcontent-subheading">Types of PL/SQL Loops</p>
+           <p class="tutcontent-description"> There are 4 types of PL/SQL Loops.</p>
+            <ol>
+          <li> <p class="tutcontent-description"> Basic Loop / Exit Loop</p></li>
+          <li> <p class="tutcontent-description"> While Loop</p></li>
+          <li> <p class="tutcontent-description"> For Loop</p></li>
+          <li> <p class="tutcontent-description"> Cursor For Loop    </p>   </li>  
+</ol>
+ <p class="tutcontent-description">Now that you know what is loop in PL/SQL, let's jump to ExitLoop in PL/SQL</p>
+            <hr class="hr-line">
+            <div class="exnextbtns">
+                <a href="plsql-tut5.html" class="previous-page-btn">
+                    <div class="pagination-turnover">
+                        <p class="pagination-text">Previous</p>
+                        <p class="nextpage-topic">PL/SQl IF</p>
+                    </div>
+                </a>
+            <a href="plsql-tut7.html" class="next-page-btn">
+                <div class="pagination-turnover">
+                    <p class="pagination-text">Next : </p>
+                    <p class="nextpage-topic">PL/SQL ExitLOOP</p>
+                </div>
+                <i class='bx bx-md bx bx-right-arrow-alt bx-fade-right-hover' id="arrow-right"></i>
+            </a>
+        </div>
+            <p class="tutcontent-subheading">Share this page on : </p>
+            <div class="social-share">
+                <a target="_blank" class="faceBookBtn" href=""><img src="../../images/facebook-logo.svg" alt="">FaceBook</a>
+                <a target="_blank" class="whatsappShareBtn" href=""><img src="../../images/whatsapp-logo.svg" alt="">Whatsapp</a>
+                <a target="_blank" class="tweetBtn" href=""><img src="../../images/twitter-logo.svg" alt="">Twitter</a>
+            </div>
+           
+        </div>
+    </section>
+    <div class="footer"></div>
+    <p class="copyright-statement">© 2022 AnalyzeCode.com All rights reserved.</p>
+</body>
+<script src="plsql-script.js"></script>
+<script>
+    let whatsappShareBtn = document.querySelector("a.whatsappShareBtn");
+// whatsappShareBtn.href = "whatsapp://send?text=" + document.URL;
+whatsappShareBtn.href = "https://api.whatsapp.com//send?text=Check+this+awesome+article+on+"+document.title+"%20"+document.URL;
+let tweetBtn = document.querySelector("a.tweetBtn");
+tweetBtn.href= "https://twitter.com/intent/tweet?url="+document.URL;
+let faceBookBtn = document.querySelector("a.faceBookBtn");
+faceBookBtn.href = "http://www.facebook.com/share.php?u="+document.URL;
+
+</script>
+<script src="../../script.js"></script>
+<script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+</html>

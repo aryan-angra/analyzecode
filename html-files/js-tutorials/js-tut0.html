@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started with JavaScript</title>
+    <meta name="keywords" content="javascript tricks, Features, JavaScript">
+    <meta name="description" content="free javascript tutorials for beginners step by step">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" href="../../images/site-logo.svg" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="top-area" id="topArea">
+        <header>
+            <a href="../../index.html">
+                <div class="logo">
+                    <img src="../../images/site-logo.svg" alt="">
+                    <span class="logo-text">Analyze Code</span>
+                </div> 
+            </a>
+            <nav>
+                <a href="javascript:void(0)" class="dropdown-btn" id="tutdrop-btn">Tutorials <i class='bx bx-sm bx-chevron-down'></i></a>
+                <a href="javascript:void(0)" class="dropdown-btn" id="exerdrop-btn">Exercises <i class='bx bx-sm bx-chevron-down'></i></a>
+                <a href="https://www.youtube.com/@analyzecode" class="dropdown-btn">Videos <i class='bx bx-play'></i></a>
+                <a href="../js-exercises/js-exercise1.html" class="dropdown-btn">Code Editor</a>
+            </nav>
+            <div class="openLogin">
+                <button>Login</button>
+                </div>
+            <div class="search-bar">
+                <i class='bx bx-sm bx-search'></i>
+            </div>
+            <i class='bx bx-md bx-menu-alt-right hamburger-menu-ico'></i>
+        </header>
+        <div class="drop-down-container tutcontents-dropdown" id="tutdropdown-content">
+            <div class="sidebar">
+            <ul>
+                <li id="htmtut" class="active">Html</li>
+                <li id="csstut">CSS</li>
+                <li id="jstut">JavaScript</li>
+                <li id="dbmstut">DBMS & MySQL</li>
+                <li id="plsqltut">PL/SQL</li>
+            </ul>
+            </div>
+            <div class="navcontent">
+                <p class="tutcontent-subheading">Popular Tutorials</p>
+                <div id="htmtutcontent" class="tutcontents-dropdown">
+                    <ul>
+                   <li> <a href="../html-tutorials/htm-tut0.html">HTML Introduction</a></li>
+                   <li> <a href="../html-tutorials/htm-tut1.html">HTML Elements</a></li>
+                   <li> <a href="../html-tutorials/htm-tut2.html">HTML Attributes</a></li>
+                   <li> <a href="../html-tutorials/htm-tut3.html">HTML Headings</a></li>
+                   <li> <a href="../html-tutorials/htm-tut4.html">HTML Paragraphs</a></li>
+                   <li> <a href="../html-tutorials/htm-tut5.html">HTML Comments</a></li></ul>
+    <a href="../html-tutorials/htm-tut0.html" class="home-course-button"> View all <img src="../../images/Double Right icon.svg" alt=""></a>
+    
+                </div>
+                <div id="csstutcontent" class="tutcontents-dropdown">
+                    <ul>
+                   <li> <a href="../css-tutorials/css-tut0.html">CSS Introduction</a></li>
+                   <li> <a href="../css-tutorials/css-tut1a.html">CSS Syntax</a></li>
+                   <li> <a href="../css-tutorials/css-tut1b.html">CSS Background</a></li>
+                   <li> <a href="../css-tutorials/css-tut1c.html">CSS Selectors</a></li>
+                   <li> <a href="../css-tutorials/css-tut1d.html">CSS Comments</a></li>
+                   <li> <a href="../css-tutorials/css-tut1e.html">CSS Inline CSS</a></li></ul>
+    <a href="../css-tutorials/css-tut0.html" class="home-course-button"> View all <img src="../../images/Double Right icon.svg" alt=""></a>
+    
+                </div>
+                <div id="jstutcontent" class="tutcontents-dropdown">
+                    <ul>
+                   <li> <a href="../js-tutorials/js-tut0.html">Getting Started</a></li>
+                    <li><a href="../js-tutorials/js-tut1a.htmls-tutorials/js-tut1a.html">Ways to Execute</a></li>
+                   <li> <a href="../js-tutorials/js-tut0.htmls-tutorials/js-tut1b.html">JS Variables</a></li>
+                   <li> <a href="../js-tutorials/js-tut0.htmls-tutorials/js-tut1c.html">Let & Constant</a></li>
+                   <li> <a href="../js-tutorials/js-tut0.htmls-tutorials/js-tut1d.html">Document Methods</a></li>
+                   <li> <a href="../js-tutorials/js-tut0.htmls-tutorials/js-tut1e.html">JS console.log</a></li></ul>
+    <a href="../js-tutorials/js-tut0.html" class="home-course-button"> View all <img src="../../images/Double Right icon.svg" alt=""></a>
+    
+                </div>
+    
+                <div id="dbmstutcontent" class="tutcontents-dropdown">
+                    <ul>
+                   <li> <a href="../mysql-tutorials/dbms-tut1.html">What is DBMS?</a></li>
+                   <li><a href="../mysql-tutorials/dbms-tut7.html">RDBMS 12 Codd's Rule</a></li>
+                   <li> <a href="../mysql-tutorials/dbms-tut6.html">DBMS Architecture</a></li>
+                   <li> <a href="../mysql-tutorials/dbms-tut8.html">MySQL Features</a></li>
+                   <li> <a href="../mysql-tutorials/dbms-tut13.html">MySQL CREATE TABLE</a></li>
+                   <li> <a href=../mysql-tutorials/dbms-tut18.html">MySQL Constraints</a></li></ul>
+    <a href="../mysql-tutorials/dbms-tut1.html" class="home-course-button"> View all <img src="../../images/Double Right icon.svg" alt=""></a>
+    
+                </div>
+                <div id="plsqltutcontent" class="tutcontents-dropdown">
+                    <ul>
+                   <li> <a href="../plsql-tutorials/plsql-tut1.html">Getting Started</a></li>
+                   <li><a href="../plsql-tutorials/plsql-tut2.html">PL/SQL Variables</a></li>
+                   <li> <a href="../plsql-tutorials/plsql-tut3.html">PL/SQL Constant</a></li>
+                   <li> <a href="../plsql-tutorials/plsql-tut4.html">PL/SQL If</a></li>
+                   <li> <a href="../plsql-tutorials/plsql-tut5.html">PL/SQL Case</a></li>
+                   <li> <a href="../plsql-tutorials/plsql-tut6.html">PL/SQL Loop</a></li></ul>
+    <a href="../plsql-tutorials/plsql-tut1.html" class="home-course-button"> View all <img src="../../images/Double Right icon.svg" alt=""></a>
+    
+                </div>
+            </div>
+    
+    </div>
+    
+            <div class="drop-down-container exercontents-dropdown" id="exerdropdown-content">
+                <div class="sidebar">
+                <ul>
+                    <li id="htmexer" class="active">Html</li>
+                    <li id="cssexer">CSS</li>
+                    <li id="jsexer">JavaScript</li>
+        
+                </ul>
+                </div>
+                <div class="navcontent">
+                    <p class="tutcontent-subheading">Popular Exercises</p>
+                    <div id="htmexercontent" class="exercontents-dropdown">
+                        <ul>
+                       <li> <a href="../html-exercises/htm-exercise1.html">h1 to h6 tags</a></li>
+                       <li> <a href="../html-exercises/htm-exercise2.html">Span two columns</a></li>
+                       <li> <a href="../html-exercises/htm-exercise3.html">Emojis using html</a></li>
+                       <li> <a href="../html-exercises/htm-exercise4.html">Types of Lists</a></li>
+                       <li> <a href="../html-exercises/htm-exercise5.html">Marquee tag</a></li>
+                       <li> <a href="../html-exercises/htm-exercise6.html">Details Tag</a></li></ul>
+       <a href="../html-exercises/htm-exerciselist.html" class="home-course-button"> View all <img src="../../images/Double Right icon.svg" alt=""></a>
+    
+                    </div>
+                    <div id="cssexercontent" class="exercontents-dropdown">
+                        <ul>
+                       <li> <a href="../css-exercises/css-exercise1.html">Gradient with divs</a></li>
+                       <li> <a href="../css-exercises/css-exercise6.html">Name Card</a></li>
+                       <li> <a href="../css-exercises/css-exercise13.html">Text Editing</a></li>
+                       <li> <a href="../css-exercises/css-exercise15.html">Menu Bar</a></li>
+                       <li> <a href="../css-exercises/css-exercise23.html">Bakcground Image</a></li>
+                       <li> <a href="../css-exercises/css-exercise26.html">Text Shadow</a></li></ul>
+       <a href="../css-exercises/css-exercise1.html" class="home-course-button"> View all <img src="../../images/Double Right icon.svg" alt=""></a>
+    
+                    </div>
+                    <div id="jsexercontent" class="exercontents-dropdown">
+                        <ul>
+                       <li> <a href="../js-exercises/js-exercise1.html">Convert Temperature</a></li>
+                        <li><a href="../js-exercises/js-exercise2.html">Area of rectangle</a></li>
+                       <li> <a href="../js-exercises/js-exercise3.html">Check Leap Year</a></li>
+                       <li> <a href="../js-exercises/js-exercise4.html">Calculate days</a></li>
+                       <li> <a href="../js-exercises/js-exercise5.html">Get Website URL</a></li>
+                       <li> <a href="../js-exercises/js-exercise6.html">Compute Sum/Triple Sum</a></li></ul>
+       <a href="../js-exercises/js-exerciselist.html" class="home-course-button"> View all <img src="../../images/Double Right icon.svg" alt=""></a>
+    
+                    </div>
+    
+                    
+                </div>
+    
+    </div>
+        <div class="jsblob1"><img src="../../images/jstut-blob.svg" alt=""></div>
+        <div class="jsblob2"><img src="../../images/jstut-blob2.svg" alt=""></div>
+        <div class="tutorial-banner-top desktop-tutorial">
+            <img src="../../images/js-logo.svg" alt=""> 
+            <div class="tutorial-banner-text">
+                <p class="medium-heading">Learn JavaScript Programming</p>
+                <div class="sub-nav">
+                    <a href="#" class="active"><i class='bx bx-md bx-book-bookmark'></i>Tutorials</a>
+                    <a href="../js-exercises/js-exerciselist.html"><i class='bx bx-md bx-edit'></i>Exercises</a>
+                    <a href="../js-exercises/js-exercise1.html"><i class='bx bx-md bx-code-block'></i>Code Editor</a>
+                    <a href="../js-games/js-games-list.html"><i class='bx bx-md bx-play'></i>Videos</a>
+                </div>
+                <img src="../../images/blue-underline.svg" class="blue-underline" alt="">
+                <p class="lang-defination">A scripting language that enables you to create dynamically updating content,
+                    control multimedia, animate images, and pretty much everything else.
+                </p>
+            </div>
+            </div>
+            <div class="tutorial-banner-top mobile-banner" style="display:none;">
+                    <div class="tutorial-banner-text">
+                        <img src="../../images/js-logo.svg" alt="">
+                        <p class="medium-heading">Learn JavaScript Programming</p>
+                    </div>
+                    <div class="sub-nav">
+                        <a href="#" class="active"><i class='bx bx-md bx-book-bookmark'></i>Tutorials</a>
+                        <a href="../js-exercises/js-exerciselist.html"><i class='bx bx-md bx-edit'></i>Exercises</a>
+                        </div>
+                    <div class="sub-nav">
+                        <a href="../js-exercises/js-exercise1.html"><i class='bx bx-md bx-code-block'></i>Code Editor</a>
+                        <a href="../js-games/js-games-list.html"><i class='bx bx-md bx-game'></i>Games</a>
+                    </div>
+                <img src="../../images/blue-underline.svg" class="blue-underline" alt="">
+               <div class="tutorial-banner-text mobile">
+                <p class="lang-defination">A scripting language that enables you to create dynamically updating content,
+                    control multimedia, pretty much everything else.
+                </p>
+               </div>
+            </div>
+    </section>
+   <a href="#"> <i class='bx bx-md bxs-chevron-up gotoup'></i></a>
+    <section class="tut-content-block" id="tutContentBlock">
+       <div class="tut-content-sidebar">
+        <p class="tut-content-sidebar-heading">Page Index</p>
+        <details class="sidebarDetail" open>
+            <summary>JS Introduction <i class='bx bxs-chevron-down'></i></summary>
+            <ul>
+                <li><a href="js-tut0.html" class="tutitemactive"><i class="fa-regular fa-circle-check"></i>Getting Started</a></li>
+                <li><a href="js-tut1a.html" ><i class="fa-regular fa-circle-check"></i>Ways to execute</a></li>
+                <li><a href="js-tut1b.html" ><i class="fa-regular fa-circle-check"></i>JS Variables</a></li>
+                <li><a href="js-tut1c.html" ><i class="fa-regular fa-circle-check"></i>JS Let & Constant</a></li>
+                <li><a href="js-tut1d.html" ><i class="fa-regular fa-circle-check"></i>JS Documents methods</a></li>
+                <li><a href="js-tut1e.html" ><i class="fa-regular fa-circle-check"></i>JS console.log</a></li>
+                <li><a href="js-tut1f.html" ><i class="fa-regular fa-circle-check"></i>JS Data types</a></li>
+                <li><a href="js-tut1g.html" ><i class="fa-regular fa-circle-check"></i>JS Operators</a></li>
+                <li><a href="js-tut1h.html" ><i class="fa-regular fa-circle-check"></i>JS Type conversions</a></li>
+            </ul>
+        </details>
+        <details class="sidebarDetail">
+            <summary>JS Control flow <i class='bx bxs-chevron-down'></i></summary>
+            <ul><li><a href="js-tut2a.html" ><i class="fa-regular fa-circle-check"></i>JS If else Statement</a></li>
+                <li><a href="js-tut2b.html" ><i class="fa-regular fa-circle-check"></i>JS For loop Statement</a></li>
+                <li><a href="js-tut2c.html" ><i class="fa-regular fa-circle-check"></i>JS While Statement</a></li>
+                <li><a href="js-tut2d.html" ><i class="fa-regular fa-circle-check"></i>JS Break Statement</a></li>
+                <li><a href="js-tut2e.html" ><i class="fa-regular fa-circle-check"></i>JS Continue Statement</a></li>
+                <li><a href="js-tut2f.html" ><i class="fa-regular fa-circle-check"></i>JS Switch Statement</a></li>
+            </ul>
+        </details>
+        <details class="sidebarDetail">
+            <summary>JS Functions <i class='bx bxs-chevron-down'></i></summary>
+            <ul>
+                <li><a href="js-tut3a.html" ><i class="fa-regular fa-circle-check"></i>JS Functions</a></li>
+                <li><a href="js-tut3b.html" ><i class="fa-regular fa-circle-check"></i>Variable Scope</a></li>
+                <li><a href="js-tut3c.html" ><i class="fa-regular fa-circle-check"></i>JavaScript hoisting</a></li>
+                <li><a href="js-tut3d.html" ><i class="fa-regular fa-circle-check"></i>JavaScript Recursion</a></li>
+                <li><a href="js-tut3e.html" ><i class="fa-regular fa-circle-check"></i>JS Operators</a></li>
+                <li><a href="js-tut3f.html" ><i class="fa-regular fa-circle-check"></i>JS Type conversions</a></li>
+            </ul>
+        </details>
+        <details class="sidebarDetail">
+            <summary>JS Objects <i class='bx bxs-chevron-down'></i></summary>
+            <ul>
+                <li><a href="js-tut4a.html"><i class="fa-regular fa-circle-check"></i>Object Definations</a></li>
+                <li><a href="js-tut4b.html"><i class="fa-regular fa-circle-check"></i>Object Properties</a></li>
+                <li><a href="js-tut4c.html"><i class="fa-regular fa-circle-check"></i>Object Methods</a></li>
+                <li><a href="js-tut4d.html"><i class="fa-regular fa-circle-check"></i>Object Display</a></li>
+                <li><a href="js-tut4e.html"><i class="fa-regular fa-circle-check"></i>Object Accessors</a></li>
+                <li><a href="js-tut4f.html"><i class="fa-regular fa-circle-check"></i>Object Constructors</a></li>
+                <li><a href="js-tut4g.html"><i class="fa-regular fa-circle-check"></i>Object Prototypes</a></li>
+                <li><a href="js-tut4h.html"><i class="fa-regular fa-circle-check"></i>Object Iterables</a></li>
+                <li><a href="js-tut4i.html"><i class="fa-regular fa-circle-check"></i>Object Sets</a></li>
+                <li><a href="js-tut4j.html"><i class="fa-regular fa-circle-check"></i>Object Maps</a></li>
+            </ul>
+        </details>
+        <details class="sidebarDetail">
+            <summary>JS Types <i class='bx bxs-chevron-down'></i></summary>
+            <ul>
+                <li><a href="js-tut5a.html" ><i class="fa-regular fa-circle-check"></i>JavaScript Array</a></li>
+                <li><a href="js-tut5b.html" ><i class="fa-regular fa-circle-check"></i>JS Multidimensional Array</a></li>
+                <li><a href="js-tut5c.html" ><i class="fa-regular fa-circle-check"></i>JavaScript Strings</a></li>
+                <li><a href="js-tut5d.html" ><i class="fa-regular fa-circle-check"></i>JS for in loop</a></li>
+                <li><a href="js-tut5e.html" ><i class="fa-regular fa-circle-check"></i>JavaScript Number</a></li>
+                <li><a href="js-tut5f.html" ><i class="fa-regular fa-circle-check"></i>JavaScript Symbol</a></li>
+            </ul>
+        </details>
+        <details class="sidebarDetail">
+            <summary>Exceptions and Modules <i class='bx bxs-chevron-down'></i></summary>
+            <ul>
+                <li><a href="js-tut6a.html" ><i class="fa-regular fa-circle-check"></i>JavaScript try...catch...finally</a></li>
+                <li><a href="js-tut6b.html" ><i class="fa-regular fa-circle-check"></i>JavaScript throw Statement</a></li>
+                <li><a href="js-tut6c.html" ><i class="fa-regular fa-circle-check"></i>JS Modules</a></li>
+            </ul>
+        </details>
+        <details class="sidebarDetail">
+            <summary>JS ES6 <i class='bx bxs-chevron-down'></i></summary>
+            <ul>
+                <li><a href="js-tut7a.html" ><i class="fa-regular fa-circle-check"></i>JavaScript ES6</a></li>
+                <li><a href="js-tut7b.html" ><i class="fa-regular fa-circle-check"></i>JavaScript Arrow Function</a></li>
+                <li><a href="js-tut7c.html" ><i class="fa-regular fa-circle-check"></i>JavaScript Default Parameters</a></li>
+                <li><a href="js-tut7d.html" ><i class="fa-regular fa-circle-check"></i>JavaScript Template Literals</a></li>
+                <li><a href="js-tut7e.html" ><i class="fa-regular fa-circle-check"></i>JavaScript Spread Operator</a></li>
+                <li><a href="js-tut7f.html" ><i class="fa-regular fa-circle-check"></i>JavaScript Map</a></li>
+                <li><a href="js-tut7g.html" ><i class="fa-regular fa-circle-check"></i>JavaScript Set</a></li>
+                <li><a href="js-tut7h.html" ><i class="fa-regular fa-circle-check"></i>JavaScript Assignment</a></li>
+                <li><a href="js-tut7i.html" ><i class="fa-regular fa-circle-check"></i>JavaScript Classes</a></li>
+                <li><a href="js-tut7j.html" ><i class="fa-regular fa-circle-check"></i>JavaScript Inheritance</a></li>
+                <li><a href="js-tut7k.html" ><i class="fa-regular fa-circle-check"></i>JavaScript for..of</a></li>
+                <li><a href="js-tut7l.html" ><i class="fa-regular fa-circle-check"></i>JavaScript Proxies</a></li>
+                <li><a href="js-tut7m.html" ><i class="fa-regular fa-circle-check"></i>JavaScript fetch API</a></li>
+            </ul>
+        </details> 
+        <details class="sidebarDetail">
+            <summary>JavaScript Asynchronous <i class='bx bxs-chevron-down'></i></summary>
+            <ul>
+                <li><a href="js-tut8a.html" ><i class="fa-regular fa-circle-check"></i>JavaScript setTimeout()</a></li>
+                <li><a href="js-tut8b.html" ><i class="fa-regular fa-circle-check"></i>JavaScript CallBack Function</a></li>
+                <li><a href="js-tut8c.html" ><i class="fa-regular fa-circle-check"></i>JavaScript Promise</a></li>
+                <li><a href="js-tut8d.html" ><i class="fa-regular fa-circle-check"></i>JavaScript async/await</a></li>
+                <li><a href="js-tut8e.html"><i class="fa-regular fa-circle-check"></i>JavaScript setInterval()</a></li>
+            </ul>
+        </details>
+        <details class="sidebarDetail">
+            <summary>Miscellaneous <i class='bx bxs-chevron-down'></i></summary>
+            <ul>
+                <li><a href="js-tut9a.html" ><i class="fa-regular fa-circle-check"></i>JavaScript JSON</a></li>
+                <li><a href="js-tut9b.html" ><i class="fa-regular fa-circle-check"></i>JavaScript Date and Time</a></li>
+                <li><a href="js-tut9c.html" ><i class="fa-regular fa-circle-check"></i>JavaScript Closure</a></li>
+                <li><a href="js-tut9d.html" ><i class="fa-regular fa-circle-check"></i>JavaScript this</a></li>
+                <li><a href="js-tut9e.html" ><i class="fa-regular fa-circle-check"></i>JavaScript 'use strict'</a></li>
+                <li><a href="js-tut9f.html" ><i class="fa-regular fa-circle-check"></i>Iterators and Iterables</a></li>
+                <li><a href="js-tut9g.html" ><i class="fa-regular fa-circle-check"></i>JavaScript Regular Expressions</a></li>
+
+    
+            </ul>
+        </details>
+       </div>
+        <div class="tut-content-show-content">
+            <p class="medium-heading">Getting Started With JavaScript</p>
+            <p class="tutcontent-description">
+                JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive e.g., having complex animations, clickable buttons, popup menus, etc. <br> There are also more advanced server side versions of JavaScript such as Node.js, React js, vue js etc.</p>
+            
+            <p class="small-heading">JavaScript and the ECMAScript specification</p>
+                <p class="tutcontent-description">JavaScript is standardized at <a href="https://www.ecma-international.org/"> Ecma International </a> — the European association for standardizing information and communication systems (ECMA was formerly an acronym for the European Computer Manufacturers Association) to deliver a standardized, international programming language based on JavaScript. This standardized version of JavaScript, called <strong>ECMAScript</strong>, behaves the same way in all applications that support the standard.</p>
+            <img src="../../images/js-features.svg" alt="">
+            <ol class="big">
+                <li>
+                    <p class="tutcontent-description"><p class="small-heading"> Validating User's Input : </p>JavaScript is very useful while using forms. It has the capability to validate user input for errors and also saves time. If the user leaves a required field empty or the information is incorrect, JavaScript checks for them before sending the data over to the server.
+                    <p class="tutcontent-description"><strong>For example :</strong> <br>Try to set password less than 6 digits and submit , it will validate to set minimum 6 digits password :  </p>
+                        <form action="" name="validform" onsubmit="unsuffPass();">
+                            <input type="password" name="password" id="" placeholder="set password">
+                        <input type="submit">
+                    </form>
+                    <p class="tutcontent-description">
+   <a href="js-tut-fetch-Codes/ceP1.html" class="home-course-button" target="_blank"> Run code <img src="../../images/Double Right icon.svg" alt=""></a>
+</p>
+                    </p>
+                </li>
+
+                <li>
+                    <p class="tutcontent-description">
+                      <p class="small-heading">Event handling : </p>
+                      An event is an action or an occurrence in a system that communicates about said occurrence so that you can respond to it somehow. For example, a user clicks on a button, and the system tells you to respond to the button click event with an action, say an information box.
+                      <p class="tutcontent-description"><strong>For example : </strong>Count the number of times the button is clicked using JavaScript</p>
+                      <div class="keyboard-shortcut countme"><i class='bx bx-sm bxs-heart'></i>Likes count <span class="count">  0</span> </div>
+   <a href="js-tut-fetch-Codes/ceP2.html" class="home-course-button" target="_blank"> Run code <img src="../../images/Double Right icon.svg" alt=""></a>
+
+                    </p>
+                </li>
+                <li>
+                    <p class="tutcontent-description">
+                        <p class="small-heading">Greater control : </p>
+                        JavaScript provides greater control to the browser rather than being completely dependent on the web servers. JavaScript provides additional functionalities that help reduce server load and network traffic.
+                    </p>
+                </li>
+                <li>
+                    <p class="tutcontent-description">
+                        <p class="small-heading">Platform Independent</p>
+                        JavaScript is Platform Independent, which means you need to write the script once and can run it on any platform or browser without affecting the output of the Script.. Thus it can run on Windows, Macintosh, and other browser-supported systems.
+                    </p>
+                </li>
+                <img src="../../images/js-features-1.svg" alt="">
+
+                <li>
+                    <p class="tutcontent-description">
+                        <p class="small-heading">Generating HTML Content</p>
+                        JavaScript has very handy features to dynamically generate HTML content for the web. It allows us to add text, links, images, tables, etc. or to change html content design after an event occurrence.
+                        <p class="tutcontent-description"><strong>For example : </strong></p>
+                     <button class="btn-design" id="colorsChangeblock">Click me to change my background color</button>
+   <a href="js-tut-fetch-Codes/ceP3.html" class="home-course-button" target="_blank"> Run code <img src="../../images/Double Right icon.svg" alt=""></a>
+
+                    </p>
+                </li>
+
+                <li>
+                    <p class="tutcontent-description">
+                        <p class="small-heading">Detecting the user's Browser and OS</p>
+                        JavaScript is very capable in the detection of the user's browser and OS information. Though JavaScript runs on every platform, there may occur a situation where we need the user's browser before processing. This can be helpful for writing code that results in different outputs in different browsers.
+                    </p>
+                </li>
+
+            </ol>
+            <p class="tutcontent-description">Now that you know what is JavaScript, let's learn the
+                ways to execute JavaScript from browser as well as server side</p>
+            <hr class="hr-line">
+            <div class="exnextbtns ftut1">
+                <a href="js-tut0.html" class="previous-page-btn" style="display: none;">
+</a>
+                <a href="js-tut1a.html" class="next-page-btn">
+                    <div class="pagination-turnover">
+                        <p class="pagination-text">Next : </p>
+                        <p class="nextpage-topic">Ways to execute</p>
+                    </div>
+                    <i class='bx bx-md bx bx-right-arrow-alt bx-fade-right-hover' id="arrow-right"></i>
+                </a>
+            </div>
+            <p class="tutcontent-subheading">Share this page on : </p>
+            <div class="social-share">
+                <a target="_blank" class="faceBookBtn" href=""><img src="../../images/facebook-logo.svg" alt="">FaceBook</a>
+                <a target="_blank" class="whatsappShareBtn" href=""><img src="../../images/whatsapp-logo.svg" alt="">Whatsapp</a>
+                <a target="_blank" class="tweetBtn" href=""><img src="../../images/twitter-logo.svg" alt="">Twitter</a>
+            </div>
+           
+        </div>
+    </section>
+    <div class="footer"></div>
+    <p class="copyright-statement">© 2022 AnalyzeCode.com All rights reserved.</p>
+</body>
+<script src="js-tut-script.js"></script>
+<script>
+    let whatsappShareBtn = document.querySelector("a.whatsappShareBtn");
+// whatsappShareBtn.href = "whatsapp://send?text=" + document.URL;
+whatsappShareBtn.href = "https://api.whatsapp.com//send?text=Check+this+awesome+article+on+"+document.title+"%20"+document.URL;
+let tweetBtn = document.querySelector("a.tweetBtn");
+tweetBtn.href= "https://twitter.com/intent/tweet?url="+document.URL;
+let faceBookBtn = document.querySelector("a.faceBookBtn");
+faceBookBtn.href = "http://www.facebook.com/share.php?u="+document.URL;
+
+// let detailsList = document.getElementsByClassName("sidebarDetail")
+// console.log(detailsList)
+// for(let i=0;i<detailsList.length;i++){
+//     let openedDetail;
+//     if(detailsList[i].open == true){
+//         openedDetail = i;
+//         console.log(detailsList[openedDetail])
+//     }
+//     for(let j=0;j<detailsList;j++){
+//             if(detailsList[i]!= detailsList[openedDetail]){
+//                 detailsList[i].open == false;
+//                 console.log(closed)
+//             }
+//         }
+// }
+</script>
+<script src="../../script.js"></script>
+<script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+</html>

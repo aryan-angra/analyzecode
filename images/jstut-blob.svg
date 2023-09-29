@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="283.83313px" height="255px" viewBox="0 0 283.83313 255" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L255 0L255 255L0 255L0 0Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="Group-93">
+    <g id="blob-(6)">
+      <path d="M0 0L255 0L255 255L0 255L0 0Z" id="Background" fill="none" fill-rule="evenodd" stroke="none" />
+      <g clip-path="url(#mask_1)">
+        <path d="M208.463 125.46C208.463 153.255 168.045 179.138 144.203 179.138C120.488 179.138 113.348 153.255 113.348 125.46C113.348 97.6651 120.488 67.8301 144.203 67.8301C168.045 67.8301 208.463 97.6651 208.463 125.46L208.463 125.46Z" id="Shape" fill="#0556F3" stroke="none" />
+      </g>
+    </g>
+    <path d="M202.743 79.6971C202.743 103.99 237.201 126.611 257.528 126.611C277.746 126.611 283.833 103.99 283.833 79.6971C283.833 55.4043 277.746 29.3286 257.528 29.3286C237.201 29.3286 202.743 55.4043 202.743 79.6971L202.743 79.6971Z" id="Shape" fill="#0556F3" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password validation</title>
+<style>
+body{
+margin: 20px;
+}
+form{
+display: flex;
+padding:5%;
+}
+input[type=password] {
+border: 1px solid #ccc;
+border-radius: 6px 0 0 6px;
+outline: none;
+width: 25ch;
+padding: 2%;
+}
+input[type="submit"]{
+border: 1px solid #ccc;
+border-radius: 6px 0 0 6px;
+outline: none;
+width: 25ch;
+padding: 2%;
+}
+input[type="submit"]{
+border: none;
+font-size: 1rem;
+padding: 1%;
+cursor: pointer;
+border-radius: 0 6px 6px 0;
+color: #fff;
+background-color: #256af0;
+}
+</style>
+</head>
+<body>
+<form action="" name="validform" onsubmit="unsuffPass();">
+<input type="password" name="password" id="" placeholder="set password">
+<input type="submit">
+</form>
+</body>
+<script>
+function unsuffPass(){
+let password = document.validform.password.value; 
+if(password.length<6){
+alert("Password must be at least 6 characters long.");  
+}
+}
+</script>
+</html>
